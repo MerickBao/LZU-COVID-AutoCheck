@@ -187,10 +187,6 @@ def submitCard():
     # server酱接口
     serverchanUrl = 'https://sctapi.ftqq.com/' + sendKey + '.send'
 
-    # Test Code: python LZU-Auto-COVID-Health-Report.py [cardID] [password]
-    # cardID = sys.argv[1]
-    # passwd = sys.argv[2]
-
     dayCok, cardID = getDailyToken(cardID, passwd)
     ST = getST(dayCok)
     AuToken = getAuthToken(ST, cardID, dayCok)
@@ -210,7 +206,7 @@ def submitCard():
     if response['code'] == 1:
         print(str(timeStamp) + " 打卡成功，" + str(response) + "，疫情期间，记得保持身体健康哦!")
         serverchanParameters = {
-            'title': ' 打卡成功',
+            'title': ' 健康打卡成功',
             'desp': '### ' + str(timeStamp) + ' 疫情期间，记得保持身体健康哦！'
         }
         requests.get(serverchanUrl, serverchanParameters)
