@@ -1,5 +1,14 @@
 ### 问题修复
 
+#### 2022.04.01
+- 更新`workflow`中`setup-python`为最新版本，修复python环境配置异常，感谢**[stone-freedom](https://github.com/stone-freedom)**同学提供的PR👍。
+
+  其他同学可以简单的通过在自己仓库点击`Fetch upstream`来一键同步源仓库（当然同步源还有其他方式），如下图：
+
+  ![截屏2022-04-01 15.54.52](https://cdn.jsdelivr.net/gh/MerickBao/picEmbedding/img/20220401155802.png)
+
+
+#### 2022.03.29
 - 1.如果连续两个月都没有对仓库内容进行过修改，可能`Actions`会运行失败，如果遇到，请进入`Actions`页面按照提示手动运行一遍`workflow`即可解决。
 - 2.由于「gitee」毫无征兆的直接封了我的图床仓库，导致所有内容中图片不能访问。现已将图床转移到「Github」。这里「diss」一下「gitee」，顺便推荐「jsDelivr」+「Github」的图床方案👍。
 
