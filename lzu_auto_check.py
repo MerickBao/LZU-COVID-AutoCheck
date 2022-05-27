@@ -214,7 +214,7 @@ def submitCard():
         print(str(timeStamp) + "打卡失败, " + str(response) + "，请提交相关问题到issue中!")
         serverchanParameters = {
             'title': ' 打卡失败！！！，请手动尝试。',
-            'desp': '### ' + str(timeStamp) + " 打卡失败, " + str(response) + "，请提交相关问题到issue中!"
+            'desp': '### ' + str(timeStamp) + " 打卡失败, " + str(response) + "，请提交相关问题到issue中，或者检查是否同步源仓库到最新!"
         }
         requests.get(serverchanUrl, serverchanParameters)
         raise Exception(str(timeStamp) + "打卡失败, " + str(response) + "，请提交相关问题到issue中!")
