@@ -3,7 +3,7 @@
 #### 2022.04.01
 - 更新`workflow`中`setup-python`为最新版本，修复python环境配置异常，感谢[stone-freedom](https://github.com/stone-freedom)同学提供的PR👍。
 
-  其他同学可以简单的通过在自己仓库点击`Fetch upstream`来一键同步源仓库（当然同步源还有其他方式），如下图：
+  其他同学可以简单的通过在自己仓库点击`Fetch upstream`来一键同步源仓库（可以定期`Fetch`一下，防止`workflow`被关闭），如下图：
 
   ![截屏2022-04-01 15.54.52](https://cdn.jsdelivr.net/gh/MerickBao/picEmbedding/img/20220401155802.png)
 
